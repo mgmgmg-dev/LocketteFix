@@ -1,0 +1,5 @@
+name: LocketteFix
+version: '${project.version}'
+main: me.mgmgmg.lockettefix.LocketteFix
+api-version: '1.20'
+author: mgmgmg
