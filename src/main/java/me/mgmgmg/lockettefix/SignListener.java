@@ -24,12 +24,12 @@ public class SignListener implements Listener {
     }
 
     public boolean isPrivate(Sign sign) {
-        return switch (sign.getSide(Side.FRONT).getLine(0)) {
+        return switch (sign.getSide(Side.FRONT).getLine(0).toLowerCase()) {
             default -> false;
-            case "[Private]", "[More Users]" -> true;
-        } || switch (sign.getSide(Side.BACK).getLine(0)) {
+            case "[private]", "[more users]" -> true;
+        } || switch (sign.getSide(Side.BACK).getLine(0).toLowerCase()) {
             default -> false;
-            case "[Private]", "[More Users]" -> true;
+            case "[private]", "[more msers]" -> true;
         };
     }
 }
