@@ -29,7 +29,7 @@ public class SignListener implements Listener {
             case "[private]", "[more users]" -> true;
         } || switch (sign.getSide(Side.BACK).getLine(0).toLowerCase()) {
             default -> false;
-            case "[private]", "[more msers]" -> true;
+            case "[private]", "[more users]" -> true;
         };
     }
 }
